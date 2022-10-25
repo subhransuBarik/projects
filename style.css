@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.container{
+    width: 600px;
+    height: 60%;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2em;
+    width: 30ch;
+    /* background-color: blue; */
+    flex: 50%;
+}
+
+img{
+    background-size: fit;
+    flex: 50%;
+}
+button{
+    padding: .5em;
+    border: none;
+    background:#3c8067;
+    color: #e1f9f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+}
+.price{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.new{
+    font-size: xx-large;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+}
+.old{
+    font-size: small;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.svgbutton{
+    margin-right: 10px;
+    fill:#e1f9f0;
+}
+
+
+h3{
+    letter-spacing: 5px;
+    color: gray;
+    font-size: small;
+}
+p{
+    color: gray;
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        flex-direction: column;
+        height: 90%;
+        width: 350px;
+       border-radius: 10px;
+       
+    }
+    img{
+        content: url(./images/image-product-mobile.jpg);
+        /* display: none; */
+    }
+    .top{
+        margin-top: 5px;
+    }
+} 
